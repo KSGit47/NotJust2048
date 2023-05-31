@@ -1,0 +1,12 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#board{
+    width: 500px;
+    height: 400px;
+    color: crimson;
+    background-color: aquamarine;
+    border: 20px solid rebeccapurple;
+}

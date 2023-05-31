@@ -1,0 +1,14 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+hr{
+    width: 400px;
+}
+#board{
+    width: 400px;
+    height: 400px;
+    color: burlywood;
+    background-color: crimson;
+    border: 20px solid crimson;
+}

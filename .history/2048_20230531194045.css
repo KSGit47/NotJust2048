@@ -1,0 +1,15 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+hr{
+    width: 400px;
+}
+#board{
+    width: 400px;
+    height: 400px;
+    color: crimson;
+    background-color: aquamarine;
+    border: 20px solid rebeccapurple;
+    align-content: center;
+}
