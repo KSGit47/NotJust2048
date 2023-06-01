@@ -9,7 +9,7 @@ hr{
     width: 400px;
     height: 400px;
     color: rgb(12, 89, 27);
-    background-color: rgb(215, 96, 96);
+    background-color: rgb(165, 156, 52);
     border: 10px solid aquamarine;
     margin: 0 auto;
     display: flex;
@@ -18,7 +18,7 @@ hr{
 .tile{
     width:90px;
     height:90px;
-    border:5px solid aquamarine;
+    border:5px solid rgb(255, 208, 127);
     font-size: 40px;
     font-weight: bold;
     display: flex;

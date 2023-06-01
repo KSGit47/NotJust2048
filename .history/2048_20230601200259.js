@@ -7,10 +7,10 @@ window.onload=function(){
 }
 function setGame(){
     board =[
-        [0,0,0,0],
-        [0,0,0,0],
-        [0,0,0,0],
-        [0,0,0,0]
+        [2,2,2,2],
+        [2,2,2,2],
+        [4,4,8,8],
+        [4,4,8,8]
     ]
     for(let r= 0;r<rows;r++){
         for(let c=0;c<columns;c++){
@@ -22,7 +22,7 @@ function setGame(){
         }
     }
     setTwo();
-    setTwo();
+    setTwo()
 }
 function hasEmp(){
     for(let r = 0; r < rows; r++){
@@ -62,25 +62,19 @@ function updateTile(tile, num){
             tile.classList.add("x2048");
         }
     }
-    document.getElementById("score").innerText=score;
-    if(score >= 2048) alert("YAAAAAYY!! YOU WON");
 }
  document.addEventListener("keyup", (e)=>{
     if(e.code == "ArrowLeft"){
         slideLeft();
-        setTwo();
     }
     else if (e.code == "ArrowRight"){
         slideRight();
-        setTwo();
     }
     else if(e.code == "ArrowUp"){
         slideUp();
-        setTwo();
     }
     else if(e.code == "ArrowDown"){
         slideDown();
-        setTwo();
     }
  })
  function filterZero(row){
@@ -90,14 +84,7 @@ function updateTile(tile, num){
     row = filterZero(row);
     for(let i=0;i<row.length-1;i++){
         if(row[i] == row[i+1]){
-            let n = Math.floor(Math.random() * 10);
-            if(n%2==0)
             row[i] *= 2;
-            else if(n%3==0)
-            row[i] -= 2;
-            else
-            row[i] += 2;
-            if(row[i]<=0) row[i]=2;
             row[i+1] = 0;
             score += row[i];
         }
