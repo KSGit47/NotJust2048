@@ -7,10 +7,10 @@ window.onload=function(){
 }
 function setGame(){
     board =[
-        [0,0,0,0],
-        [0,0,0,0],
-        [0,0,0,0],
-        [0,0,0,0]
+        [2,2,2,2],
+        [2,2,2,2],
+        [4,4,8,8],
+        [4,4,8,8]
     ]
     for(let r= 0;r<rows;r++){
         for(let c=0;c<columns;c++){
@@ -70,15 +70,12 @@ function updateTile(tile, num){
     }
     else if (e.code == "ArrowRight"){
         slideRight();
-        setTwo();
     }
     else if(e.code == "ArrowUp"){
         slideUp();
-        setTwo();
     }
     else if(e.code == "ArrowDown"){
         slideDown();
-        setTwo();
     }
  })
  function filterZero(row){

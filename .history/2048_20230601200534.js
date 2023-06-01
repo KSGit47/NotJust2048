@@ -7,9 +7,9 @@ window.onload=function(){
 }
 function setGame(){
     board =[
-        [0,0,0,0],
-        [0,0,0,0],
-        [0,0,0,0],
+        [2,2,2,2],
+        [2,2,2,2],
+        [4,4,8,8],
         [0,0,0,0]
     ]
     for(let r= 0;r<rows;r++){
