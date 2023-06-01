@@ -97,6 +97,7 @@ function updateTile(tile, num){
             row[i] -= 2;
             else
             row[i] += 2;
+
             if(row[i]<=0) row[i]=2;
             row[i+1] = 0;
             score += row[i];

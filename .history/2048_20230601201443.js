@@ -63,7 +63,7 @@ function updateTile(tile, num){
         }
     }
     document.getElementById("score").innerText=score;
-    if(score >= 2048) alert("YAAAAAYY!! YOU WON");
+    if(score == 2048) alert("YAAAAAYY!! YOU WON");
 }
  document.addEventListener("keyup", (e)=>{
     if(e.code == "ArrowLeft"){
@@ -93,10 +93,8 @@ function updateTile(tile, num){
             let n = Math.floor(Math.random() * 10);
             if(n%2==0)
             row[i] *= 2;
-            else if(n%3==0)
-            row[i] -= 2;
-            else
-            row[i] += 2;
+            els
+
             if(row[i]<=0) row[i]=2;
             row[i+1] = 0;
             score += row[i];
