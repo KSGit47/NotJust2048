@@ -10,7 +10,7 @@ hr{
     height: 400px;
     color: rgb(12, 89, 27);
     background-color: aquamarine;
-    border: 10px solid rgb(216, 136, 152);
+    border: 10px solid crimson;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -18,7 +18,7 @@ hr{
 .tile{
     width:90px;
     height:90px;
-    border:5px solid rgb(216, 136, 152);
+    border:5px solid aquamarine;
     font-size: 40px;
     font-weight: bold;
     display: flex;
