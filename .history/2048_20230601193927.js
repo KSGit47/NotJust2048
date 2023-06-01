@@ -43,12 +43,7 @@ function updateTile(tile, num){
     else if (e.code == "ArrowRight"){
         slideRight();
     }
-    else if(e.code == "ArrowUp"){
-        slideUp();
-    }
-    else if(e.code == "ArrowDown"){
-        slideDown();
-    }
+    else if(e.code == "ArrowUp")
  })
  function filterZero(row){
     return row.filter(num => num!=0);

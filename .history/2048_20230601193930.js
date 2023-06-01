@@ -44,10 +44,7 @@ function updateTile(tile, num){
         slideRight();
     }
     else if(e.code == "ArrowUp"){
-        slideUp();
-    }
-    else if(e.code == "ArrowDown"){
-        slideDown();
+        
     }
  })
  function filterZero(row){
